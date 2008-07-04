@@ -9,9 +9,16 @@ model.
 Installation
 ============
 
-To install the plugin just install from the SVN:
+To install the plugin from git:
 
-script/plugin install http://svn.intridea.com/svn/public/acts_as_readable
+script/plugin install git://github.com/jcnetdev/acts-as-readable.git
+
+To install the plugin from a gem, add this to our environment.rb:
+
+config.gem 'jcnetdev-acts-as-readable', :version => '>= 1.0',
+                                        :lib => 'acts_as_readable',
+                                        :source => 'http://gems.github.com'
+
 
 You will need the readings table to use this plugin. A generator has been included,
 simply type
